@@ -18,6 +18,21 @@ Its hope is simple:
 
 ---
 
+## Repository Structure
+
+```
+website/
+    The published HTML and assets.
+
+design/
+    Style guides, design guides, blueprints, outlines, and reference material.
+
+workshop/
+    Planning notes, exploratory documents, and development artifacts preserved for historical and educational purposes.
+```
+
+---
+
 ## Why is everything here?
 
 This repository intentionally includes not only the finished website, but much of the design work that led to it.
@@ -57,21 +72,6 @@ It became part of the conversation.
 The resulting work reflects continual human judgment about structure, tone, philosophy, coherence, and purpose.
 
 We hope these materials demonstrate one thoughtful example of what collaborative creativity can look like.
-
----
-
-## Repository Structure
-
-```
-website/
-    The published HTML and assets.
-
-design/
-    Style guides, design guides, blueprints, outlines, and reference material.
-
-workshop/
-    Planning notes, exploratory documents, and development artifacts preserved for historical and educational purposes.
-```
 
 ---
 
