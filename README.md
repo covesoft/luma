@@ -102,7 +102,7 @@ a little more attentive...
 
 or a little more grateful for the extraordinary experience of being alive...
 
-then Luma has already succeeded.
+then Luma has succeeded.
 
 Wherever your own path leads,
 
