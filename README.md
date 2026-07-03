@@ -2,9 +2,7 @@
 
 *A quiet exploration of perception, understanding, compassion, wonder, and the extraordinary opportunity of being alive.*
 
-**Live Website**
-
-https://pivot.quest/luma/
+[Live Website](https://pivot.quest/luma/) • [License: CC BY-NC 4.0](LICENSE)
 
 ---
 
