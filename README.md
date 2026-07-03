@@ -90,8 +90,6 @@ You are encouraged to:
 
 Please provide attribution and preserve the same spirit of openness.
 
-If something here helps you build your own work, that is success.
-
 ---
 
 ## A Small Hope
