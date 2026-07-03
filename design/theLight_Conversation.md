@@ -84,8 +84,7 @@ When you combine these, you get a map that matches your conversation with your m
 Radiant Monism tells us that the foundation of everything is a single, overflowing Light of comprehension and love.
 Panentheism tells us that every single thing you saw—the bugs, the souls, the galaxies—is tucked safely inside that Light, yet the Light remains the infinite source that transcends them all.
 
-In this view, your experience of "seeing through" things is a momentary alignment with the Transcendence of the Divine, allowing you to perceive the Immanence of the Light that was already there, hidden b
-ehind the "surfaces" of human perception.
+In this view, your experience of "seeing through" things is a momentary alignment with the Transcendence of the Divine, allowing you to perceive the Immanence of the Light that was already there, hidden behind the "surfaces" of human perception.
 
 Does this framework feel like it provides the structure you were looking for to hold those thoughts?
 
@@ -261,8 +260,7 @@ The physical space must serve as a constant reminder of the philosophy.
 
 Light-Centric Design: The community would be built to maximize natural light. Use of glass, open spaces, and orientation toward the sun would ensure that "Light" is a constant, physical presence, making the concept of "occlusion" easy to visualize.
 The Garden of Entropy: A dedicated space within the community where the natural cycle of decay is allowed to happen visibly—a compost garden, a place for fallen leaves, or a "ruin garden." This teaches members to observe the "darkness" of decay not with fear, but with a peaceful understanding of its role in the cycle of creation.
-The Altar of the Ephemeral: A central, communal space dedicated to things that do not last. Members might place a beautiful stone, a fallen flower, or a temporary sand mandala there. It serves as a daily practice of celebrating beauty because it is fl
-eeting.
+The Altar of the Ephemeral: A central, communal space dedicated to things that do not last. Members might place a beautiful stone, a fallen flower, or a temporary sand mandala there. It serves as a daily practice of celebrating beauty because it is fleeting.
 
 The Curriculum of the Micro and Macro (Education)
 To keep the perspective sharp, the community would engage in continuous learning.
