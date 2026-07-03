@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lens | Luma</title>
+<style>
+body {
+background-color: #0f1112; /* Slightly darker/sharper than the fog */
+color: #d1d1d1;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.8;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-x: hidden;
+}
+
+/* A subtle "lens" or "focus" light effect */
+.lens-glow {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 60vw;
+height: 60vw;
+background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+pointer-events: none;
+z-index: 1;
+}
+
+header, section, footer {
+width: 100%;
+max-width: 800px;
+padding: 100px 20px;
+box-sizing: border-box;
+position: relative;
+z-index: 2;
+}
+
+.hero {
+text-align: center;
+padding-top: 150px;
+}
+
+h1 {
+font-family: 'Georgia', serif;
+font-size: 3rem;
+font-weight: normal;
+letter-spacing: 0.2em; /* Increased spacing for a sense of precision */
+margin-bottom: 20px;
+color: #ffffff;
+}
+
+.sub-headline {
+font-size: 1.2rem;
+font-style: italic;
+opacity: 0.6;
+letter-spacing: 0.05em;
+}
+
+.content {
+font-size: 1.15rem;
+text-align: justify;
+hyphens: auto;
+}
+
+.content p {
+margin-bottom: 2rem;
+}
+
+.reflection {
+text-align: center;
+border-top: 1px solid rgba(255, 255, 255, 0.15);
+margin-top: 50px;
+font-style: italic;
+opacity: 0.8;
+}
+
+.reflection-prompt {
+font-size: 1.3rem;
+font-family: 'Georgia', serif;
+}
+
+/* --- MASTER NAVIGATION STYLES --- */
+
+/* Container to handle centering and spacing */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 100px 20px; /* Bottom padding for breathing room */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+/* Base Button Styles */
+.nav-button {
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'Georgia', serif; /* Project voice */
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Weighted, smooth transition */
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* Subtle hover effect: lifting slightly and increasing glow */
+.nav-button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- THEME OVERRIDES --- */
+
+/* Page 2: The Lens */
+.nav-button {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+</style>
+</head>
+<body>
+
+<div class="lens-glow"></div>
+
+<header class="hero">
+<h1>The Geometry of Seeing</h1>
+<p class="sub-headline">Clarity is not the absence of the fog, but the intentionality of the gaze.</p>
+</header>
+
+<section class="content">
+<p>
+The mist does not disappear simply because we wish it to. To find our way, we cannot merely wait for the clouds to part; we must instead refine how we look through them.
+</p>
+<p>
+This is the introduction of the Lens. A lens is not an addition to the world, but a way of focusing what is already there. It is the conscious decision to direct our attention, to select a point of interest, and to permit the blurry shapes to resolve into something coherent.
+</p>
+<p>
+When we change the way we observe, we change the nature of what is observed. The chaos does not vanish, but it begins to reveal a pattern. The noise does not cease, but it becomes a frequency. Through the lens, the fragmented begins to find its foundation.
+</p>
+</section>
+
+<section class="reflection">
+<p class="reflection-prompt">
+What part of your world are you currently viewing through a blur? What would happen if you chose to focus on its light instead of its opacity?
+</p>
+</section>
+
+<div class="nav-container"><a href="03-light.html" class="nav-button">Next: The Light</a></div>
+</body>
+</html>

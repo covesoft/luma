@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Noble Rebellion | Luma</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a; /* Deep Obsidian */
+            --text-primary: #f5f5dc; /* Warm Cream */
+            --text-secondary: #a0a0a0; /* Muted Grey */
+            --accent-amber: #d4af37; /* Golden Amber */
+            --accent-ember: #b35a1a; /* Burnt Orange */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* Tactile texture overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* The Ember Field */
+        .ember-container { 
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+pointer-events: none;
+}
+
+.ember {
+position: absolute;
+width: 2px;
+height: 2px;
+background: var(--accent-ember);
+border-radius: 50%;
+filter: blur(1px);
+opacity: 0;
+animation: rise 10s infinite ease-in;
+}
+
+@keyframes rise {
+0% { transform: translateY(105vh) translateX(0); opacity: 0; }
+20% { opacity: 0.6; }
+80% { opacity: 0.4; }
+100% { transform: translateY(-10vh) translateX(20px); opacity: 0; }
+}
+
+header, section, footer {
+width: 100%;
+max-width: 850px;
+padding: 120px 30px;
+box-sizing: border-box;
+position: relative;
+z-index: 2;
+}
+
+.hero {
+text-align: center;
+padding-top: 180px;
+}
+
+h1 {
+font-family: 'Georgia', serif;
+font-size: 3.5rem;
+font-weight: normal;
+letter-spacing: 0.15em;
+margin-bottom: 20px;
+color: var(--accent-amber);
+text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.sub-headline {
+font-size: 1.3rem;
+font-style: italic;
+color: var(--text-secondary);
+letter-spacing: 0.05em;
+}
+
+.content {
+font-size: 1.25rem;
+text-align: justify;
+}
+
+.content p {
+margin-bottom: 2.5rem;
+}
+
+.highlight {
+color: var(--accent-amber);
+font-weight: 500;
+}
+
+.reflection {
+text-align: center;
+border-top: 1px solid rgba(212, 175, 55, 0.2);
+margin-top: 60px;
+padding-top: 60px;
+}
+
+.reflection-prompt {
+font-size: 1.5rem;
+font-family: 'Georgia', serif;
+color: var(--text-primary);
+font-style: italic;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+h1 { font-size: 2.5rem; }
+.content { font-size: 1.1rem; text-align: left; }
+}
+
+/* --- MASTER NAVIGATION STYLES --- */
+
+/* Container to handle centering and spacing */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 100px 20px; /* Bottom padding for breathing room */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+/* Base Button Styles */
+.nav-button {
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'Georgia', serif; /* Project voice */
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Weighted, smooth transition */
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* Subtle hover effect: lifting slightly and increasing glow */
+.nav-button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- THEME OVERRIDES --- */
+
+/* Page 5: Rebellion */
+.nav-button {
+    background: rgba(179, 90, 26, 0.1);
+    color: #f5f5dc;
+    border-color: rgba(179, 90, 26, 0.4);
+}
+.nav-button:hover {
+    background: rgba(179, 90, 26, 0.2);
+    box-shadow: 0 0 20px rgba(179, 90, 26, 0.2);
+}
+</style>
+</head>
+<body>
+
+<div class="ember-container" id="ember-field">
+<!-- Embers will be generated here -->
+</div>
+
+<header class="hero">
+<h1>The Noble Rebellion</h1>
+<p class="sub-headline">In a universe tending toward silence, to exist with intention is to rebel.</p>
+</header>
+
+<section class="content">
+<p>
+Entropy is the quiet, inevitable gravity of the cosmos. It is the slow, steady unravelling of all things—the cooling of stars, the scattering of order, and the drift of meaning into the void. Left to its own devices, the universe seeks only to return to stillness.
+</p>
+<p>
+And yet, the universe refuses to be still.
+</p>
+<p>
+Look closely. There is a persistent, radiant impulse that pushes back against the dark. It is seen in the intricate, purposeful dance of a honeybee; it is seen in the silent, stubborn reach of a sapling toward the sun. Every living thing is a glorious interruption of the void. Every moment of connection, every spark of creativity, and every choice to love is a strike against the gathering silence.
+</p>
+<p>
+This is the <span class="highlight">Noble Rebellion</span>. It is not a loud or violent struggle, but a quiet, luminous persistence. It is the decision to build where there is ruin, to see where there is fog, and to create where there is nothingness.
+</p>
+<p>
+We are not merely passive observers of a decaying world. We are the hands by which the Light learns to dance. We are the architects of meaning in a landscape of chaos.
+</p>
+</section>
+
+<section class="reflection">
+<p class="reflection-prompt">
+What is your rebellion today? Where will you plant a seed of order, a spark of light, or a moment of meaning?
+</p>
+</section>
+
+<div class="nav-container"><a href="06-living.html" class="nav-button">Next: Living the Light</a></div>
+
+<script>
+// Script to generate rising embers
+const container = document.getElementById('ember-field');
+const emberCount = 40;
+
+for (let i = 0; i < emberCount; i++) {
+const ember = document.createElement('div');
+ember.className = 'ember';
+
+// Randomize position, size, and animation delay
+const xPos = Math.random() * 100;
+const delay = Math.random() * 10;
+const duration = 8 + Math.random() * 7;
+const size = 1 + Math.random() * 2;
+
+ember.style.left = xPos + '%';
+ember.style.animationDelay = delay + 's';
+ember.style.animationDuration = duration + 's';
+ember.style.width = size + 'px';
+ember.style.height = size + 'px';
+
+container.appendChild(ember);
+}
+</script>
+
+</body>
+</html>

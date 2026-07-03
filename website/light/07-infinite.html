@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Infinite | Luma</title>
+    <style>
+        :root {
+            --bg-color: #020408;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --accent-violet: rgba(147, 112, 219, 0.3);
+            --accent-silver: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-secondary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .space-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, var(--accent-violet) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(0, 255, 255, 0.05) 0%, transparent 40%);
+            z-index: -2;
+        }
+
+        #starfield {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        header, section, footer {
+            width: 100%;
+            max-width: 850px;
+            padding: 120px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero {
+            text-align: center;
+            padding-top: 180px;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3.5rem;
+font-weight: normal;
+letter-spacing: 0.3em;
+margin-bottom: 25px;
+color: var(--text-primary);
+text-transform: uppercase;
+}
+
+.sub-headline {
+font-size: 1.3rem;
+font-style: italic;
+color: var(--accent-silver);
+opacity: 0.6;
+letter-spacing: 0.1em;
+}
+
+.content {
+font-size: 1.2rem;
+text-align: center;
+}
+
+.content p {
+margin-bottom: 2.5rem;
+}
+
+.reflection {
+text-align: center;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+margin-top: 60px;
+padding-top: 60px;
+}
+
+.reflection-prompt {
+font-size: 1.5rem;
+font-family: 'Georgia', serif;
+color: var(--text-primary);
+font-style: italic;
+}
+
+.fade-in {
+animation: float-fade 4s ease-out forwards;
+}
+
+@keyframes float-fade {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+h1 { font-size: 2.2rem; letter-spacing: 0.15em; }
+.content { font-size: 1.05rem; }
+}
+
+/* --- MASTER NAVIGATION STYLES --- */
+
+/* Container to handle centering and spacing */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 100px 20px; /* Bottom padding for breathing room */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+/* Base Button Styles */
+.nav-button {
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'Georgia', serif; /* Project voice */
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Weighted, smooth transition */
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* Subtle hover effect: lifting slightly and increasing glow */
+.nav-button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- THEME OVERRIDES --- */
+
+/* Page 7: The Infinite */
+.nav-button {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+</style>
+</head>
+<body>
+
+<div class="space-bg"></div>
+<canvas id="starfield"></canvas>
+
+<header class="hero fade-in">
+<h1>The Infinite Unfolding</h1>
+<p class="sub-headline">Beyond the reach of sight, the rhythm continues.</p>
+</header>
+
+<section class="content fade-in">
+<p>
+We have found the Light in the sun-warmed floor and the breath of the morning. We have seen its defiance in the smallest wing and its grace in the simplest gesture. But the Light does not end where our perception reaches its limit.
+</p>
+<p>
+Beyond the threshold of the known, there is a vastness that defies measurement. We look to the stars and see not just points of light, but the grand, swirling architecture of a cosmos that is constantly, eternally becoming. The scale of the universe is not a void to be feared, but a depth to be honored.
+</p>
+<p>
+Here, the paradox of existence is revealed: the infinite is not "out there," separate from us. The same laws that govern the spin of a galaxy govern the pulse of your heart. The vastness is not a distance to be traveled, but a depth to be realized.
+</p>
+<p>
+To gaze into the Infinite is to realize that there is no end to the discovery, no limit to the connection, and no boundary to the Light.
+</p>
+</section>
+
+<section class="reflection fade-in">
+<p class="reflection-prompt">
+In the face of the immeasurable, can you feel the profound weight of your own presence?
+</p>
+</section>
+
+<div class="nav-container"><a href="08-invitation.html" class="nav-button">Next: The Invitation</a></div>
+
+<script>
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let width, height, stars;
+
+function init() {
+width = window.innerWidth;
+height = window.innerHeight;
+canvas.width = width;
+canvas.height = height;
+stars = [];
+for (let i = 0; i < 400; i++) {
+stars.push({
+x: Math.random() * width,
+y: Math.random() * height,
+size: Math.random() * 1.2,
+opacity: Math.random(),
+speed: Math.random() * 0.05
+});
+}
+}
+
+function draw() {
+ctx.clearRect(0, 0, width, height);
+ctx.fillStyle = 'white';
+stars.forEach(star => {
+ctx.globalAlpha = star.opacity;
+ctx.beginPath();
+ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+ctx.fill();
+star.y -= star.speed;
+if (star.y < 0) star.y = height;
+});
+requestAnimationFrame(draw);
+}
+
+window.addEventListener('resize', init);
+init();
+draw();
+</script>
+</body>
+</html>

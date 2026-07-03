@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fog | Luma</title>
+<style>
+/* Minimalist styles to capture the intended atmosphere */
+body {
+background-color: #1a1c1e; /* Deep, desaturated slate */
+color: #e0e0e0; /* Soft off-white */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.8;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-x: hidden;
+}
+
+header, section, footer {
+width: 100%;
+max-width: 800px;
+padding: 100px 20px;
+box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+text-align: center;
+padding-top: 150px;
+}
+
+h1 {
+font-family: 'Georgia', serif;
+font-size: 3rem;
+font-weight: normal;
+letter-spacing: 0.15em;
+margin-bottom: 20px;
+color: #ffffff;
+}
+
+.sub-headline {
+font-size: 1.2rem;
+font-style: italic;
+opacity: 0.7;
+letter-spacing: 0.05em;
+}
+
+/* Body Section */
+.content {
+font-size: 1.15rem;
+text-align: justify;
+hyphens: auto;
+}
+
+.content p {
+margin-bottom: 2rem;
+}
+
+/* Reflection Section */
+.reflection {
+text-align: center;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+margin-top: 50px;
+font-style: italic;
+opacity: 0.8;
+}
+
+.reflection-prompt {
+font-size: 1.3rem;
+font-family: 'Georgia', serif;
+}
+
+/* Subtle atmospheric effect placeholder */
+.fog-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none;
+background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(26, 28, 30, 0.5) 100%);
+z-index: 10;
+}
+/* --- MASTER NAVIGATION STYLES --- */
+
+/* Container to handle centering and spacing */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 100px 20px; /* Bottom padding for breathing room */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+/* Base Button Styles */
+.nav-button {
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'Georgia', serif; /* Project voice */
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Weighted, smooth transition */
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* Subtle hover effect: lifting slightly and increasing glow */
+.nav-button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- THEME OVERRIDES --- */
+
+/* Page 1: The Fog */
+.nav-button {
+    background: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+</style>
+</head>
+<body>
+
+<div class="fog-overlay"></div>
+
+<header class="hero">
+<h1>The Weight of the Unseen</h1>
+<p class="sub-headline">We are surrounded by everything, yet we often feel as though we are grasping at nothing.</p>
+</header>
+
+<section class="content">
+<p>
+The world is loud. It is a constant stream of fragments—data, noise, light, and shadow—rushing past us in a frantic attempt to be noticed. We collect pieces of truth, snippets of connection, and echoes of meaning, but they rarely coalesce.
+</p>
+<p>
+It feels like walking through a thick, grey mist. We can see the shapes of things—the outline of a life, the silhouette of a purpose—but the edges are blurred. We are navigating by instinct through a landscape that refuses to reveal its true form.
+</p>
+<p>
+This is the exhaustion of the fragmented self: the sense that there is a deeper rhythm, a more profound coherence, just beyond our current reach.
+</p>
+</section>
+
+<section class="reflection">
+<p class="reflection-prompt">
+Look closely at the noise. Is it the world that is chaotic, or is it simply that we have not yet found the lens to see through the haze?
+</p>
+</section>
+
+<div class="nav-container"><a href="02-lens.html" class="nav-button">Next: The Lens</a></div>
+</body>
+</html>

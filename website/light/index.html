@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luma | The Threshold</title>
+<style>
+:root {
+--bg-color: #050505;
+--text-primary: #ffffff;
+--text-muted: #666666;
+--accent-gold: #d4af37;
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-primary);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+}
+
+/* Pure CSS Fog/Mist Effect */
+.mist-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+overflow: hidden;
+}
+
+.mist {
+position: absolute;
+width: 200%;
+height: 200%;
+top: -50%;
+left: -50%;
+background:
+radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 40%),
+radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 40%),
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+filter: blur(80px);
+animation: drift 30s infinite alternate ease-in-out;
+}
+
+@keyframes drift {
+from { transform: translate(0, 0) rotate(0deg); }
+to { transform: translate(5%, 5%) rotate(5deg); }
+}
+
+/* Content Styling */
+.threshold-content {
+position: relative;
+z-index: 10;
+text-align: center;
+padding: 20px;
+}
+
+h1 {
+font-family: 'Georgia', serif;
+font-size: 4rem;
+font-weight: normal;
+letter-spacing: 0.4em;
+margin-bottom: 10px;
+text-transform: uppercase;
+opacity: 0;
+animation: emerge 4s ease-out forwards;
+}
+
+p {
+font-size: 1.1rem
+;
+font-style: italic;
+color: var(--text-muted);
+letter-spacing: 0.1em;
+margin-bottom: 40px;
+opacity: 0;
+animation: emerge 4s ease-out 1s forwards; /* Delayed entrance */
+}
+
+/* The "Begin" Button */
+.begin-button {
+display: inline-block;
+text-decoration: none;
+padding: 16px 50px;
+border-radius: 50px;
+border: 1px solid rgba(255, 255, 255, 0.2);
+color: var(--text-primary);
+font-family: 'Georgia', serif;
+font-size: 1.2rem;
+letter-spacing: 0.2em;
+transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 0;
+animation: emerge 4s ease-out 2s forwards; /* Further delayed entrance */
+}
+
+.begin-button:hover {
+background: rgba(255, 255, 255, 0.05);
+border-color: rgba(255, 255, 255, 0.5);
+letter-spacing: 0.25em;
+transform: translateY(-2px);
+}
+
+@keyframes emerge {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+h1 { font-size: 2.5rem; letter-spacing: 0.2em; }
+p { font-size: 0.9rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="mist-container">
+<div class="mist"></div>
+</div>
+
+<div class="threshold-content">
+<h1>Luma</h1>
+<p>A journey of perception.</p>
+<a href="01-fog.html" class="begin-button">Begin</a>
+</div>
+
+</body>
+</html>

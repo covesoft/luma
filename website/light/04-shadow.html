@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow | Luma</title>
+    <style>
+        :root {
+            --bg-color: #050505; /* Absolute, heavy black */
+            --text-muted: #707070; /* Muted grey for the 'void' */
+            --text-bright: #ffffff; /* Sharp white for the 'truth' */
+            --accent-silver: #a0a0a0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-muted);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* A heavy vignette to create a sense of being enclosed */
+        .vignette {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 20%, rgba(0, 0, 0, 0.9) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* A singular, sharp light source that feels distant */
+        .distant-light {
+            position: fixed;
+            top: 10%;
+            right: 15%;
+            width: 1px;
+height: 1px;
+background-color: white;
+box-shadow: 0 0 30px 2px rgba(255, 255, 255, 0.1);
+z-index: 0;
+}
+
+header, section, footer {
+width: 100%;
+max-width: 800px;
+padding: 100px 25px;
+box-sizing: border-box;
+position: relative;
+z-index: 2;
+}
+
+.hero {
+text-align: left; /* Shifted to left for a more stark, asymmetrical feel */
+padding-top: 180px;
+}
+
+h1 {
+font-family: 'Georgia', serif;
+font-size: 3rem;
+font-weight: normal;
+letter-spacing: 0.1em;
+margin-bottom: 15px;
+color: var(--text-bright);
+}
+
+.sub-headline {
+font-size: 1.1rem;
+font-style: italic;
+color: var(--text-muted);
+letter-spacing: 0.05em;
+}
+
+.content {
+font-size: 1.15rem;
+text-align: left;
+}
+
+.content p {
+margin-bottom: 2.5rem;
+}
+
+/* Highlighting the realization of occlusion */
+.revelation {
+color: var(--text-bright);
+font-weight: 500;
+}
+
+.reflection {
+text-align: left;
+border-top: 1px solid #1a1a1a;
+margin-top: 80px;
+padding-top: 60px;
+}
+
+.reflection-prompt {
+font-size: 1.4rem;
+font-family: 'Georgia', serif;
+color: var(--accent-silver);
+font-style: italic;
+}
+
+/* Subtle animation for the text to feel like it's emerging from dark */
+.fade-in {
+animation: emerge 3s ease-out forwards;
+}
+
+@keyframes emerge {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- MASTER NAVIGATION STYLES --- */
+
+/* Container to handle centering and spacing */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 100px 20px; /* Bottom padding for breathing room */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+/* Base Button Styles */
+.nav-button {
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'Georgia', serif; /* Project voice */
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Weighted, smooth transition */
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* Subtle hover effect: lifting slightly and increasing glow */
+.nav-button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- THEME OVERRIDES --- */
+
+/* Page 4: Shadow */
+.nav-button {
+    background: rgba(255, 255, 255, 0.03);
+    color: #a0a0a0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.nav-button:hover {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+</style>
+</head>
+<body>
+
+<div class="vignette"></div>
+<div class="distant-light"></div>
+
+<header class="hero fade-in">
+<h1>The Sacred Depth</h1>
+<p class="sub-headline">The shadow is not a negation of existence, but the architecture of its depth.</p>
+</header>
+
+<section class="content fade-in">
+<p>
+There are moments when the Light seems to withdraw. We encounter silences that feel absolute, and voids that feel heavy. We face the "nothingness" that the philosophers spoke of—the sense that the universe is indifferent to our gaze, a vast and hollow expanse.
+</p>
+<p>
+But look closer. What we call "shadow" is not an independent force. It is not a substance that enters the world to fight the light. <span class="revelation">Shadow is an event.</span> It is an occlusion—a momentary hiding of the radiance by the very things that the Light has given shape.
+</p>
+<p>
+The shadow does not exist without the light; it is defined entirely by the boundaries of the brilliance that surrounds it. It is the shape of the obstacle, the silhouette of the mountain, the depth of the valley. Without this occlusion, the Light would have no form, no texture, and no dimension.
+</p>
+<p>
+To face the shadow is not to face the end, but to encounter the depth of the unfolding. It is a reminder that the Light is so vast, and its expression so complex, that it can be momentarily hidden within the very structures of reality.
+</p>
+</section>
+
+<section class="reflection fade-in">
+<p class="reflection-prompt">
+When you feel the weight of the dark, ask yourself: Is the light truly gone, or is it simply providing the shape for the moment you are in?
+</p>
+</section>
+
+<div class="nav-container"><a href="05-rebel.html" class="nav-button">Next: The Noble Rebellion</a></div>
+</body>
+</html>
